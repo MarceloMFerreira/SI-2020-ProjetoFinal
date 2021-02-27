@@ -11,7 +11,7 @@ namespace ProjetoFinal
 {
     class ConectaBanco
     {
-        MySqlConnection conexao = new MySqlConnection("server=localhost; user id=root; password=;database=padaria_linguagens");
+        MySqlConnection conexao = new MySqlConnection("server=localhost; user id=root; password=123456;database=padaria_linguagens");
         public string msg;
 
         public DataTable lista()
