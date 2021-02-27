@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `clientes` (
 -- Copiando dados para a tabela padaria_linguagens.clientes: ~6 rows (aproximadamente)
 /*!40000 ALTER TABLE `clientes` DISABLE KEYS */;
 REPLACE INTO `clientes` (`cpf`, `nome`, `endereco`, `telefone`) VALUES
-	('127.008.970-64', 'Gabriel Barbosa', 'Rua Lenda', '3822-9999'),
+	('127.008.970-64', 'Gabriel Barbosa', 'Rua Maracanã', '3822-9999'),
 	('253.854.171-90', 'Maria Joaquina', 'Rua Bartolomeu', '9999-5234'),
 	('531.936.866-62', 'Helena Santos', 'Rua Sorocaba', '7777-7777'),
 	('601.355.198-70', 'Julesca Santos', 'Rua Batman', '1234-4567'),
@@ -75,7 +75,7 @@ CREATE PROCEDURE `updateCliente`(nome varchar(45), endereco varchar(99), telefon
 BEGIN
 UPDATE `padaria_linguagens`.`clientes`
 SET
-`cpf` = cpf,
+
 `nome` = nome,
 `endereco` = endereco,
 `telefone` = telefone
