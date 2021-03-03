@@ -99,6 +99,7 @@ namespace ProjetoFinal
 
 
             }
+            txtBusca.Clear();
         }
 
         private void btnAlterar_Click_1(object sender, EventArgs e)
@@ -110,6 +111,7 @@ namespace ProjetoFinal
             txtAltEnd.Text = dgClientes.Rows[linha].Cells["endereco"].Value.ToString();
             txtAltTel.Text = dgClientes.Rows[linha].Cells["telefone"].Value.ToString();
             tabControl1.SelectedTab = tabPage1;
+            txtBusca.Clear();
         }
         void limpaForm()
         {
